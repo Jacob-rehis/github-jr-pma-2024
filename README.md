@@ -1,1 +1,2 @@
-nová aplikace na zobrazování osobních informací. 
+depositář pro cvičení z PMA 
+student: Jakub Řeháček
