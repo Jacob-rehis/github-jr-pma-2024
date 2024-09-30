@@ -1,102 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/delete"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:backgroundTint="#00BCD4"
-    android:backgroundTintMode="add"
     android:orientation="vertical"
-    android:padding="20dp"
-    tools:context=".MainActivity">
+    android:padding="20dp">
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:orientation="horizontal">
-
-
-        <EditText
-            android:id="@+id/name"
-            android:layout_width="00dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:autofillHints="65"
-            android:ems="10"
-            android:hint="Jméno"
-            android:inputType="text"
-            android:textColorHint="#546E7A"
-            app:layout_constraintEnd_toEndOf="parent" />
-
-
-        <EditText
-            android:id="@+id/surname"
-            android:layout_width="00dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.5"
-            android:ems="10"
-            android:hint="Příjmení"
-            android:inputType="text"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
-    </LinearLayout>
-
-
-    <EditText
-        android:id="@+id/obec"
+    <!-- Seznam receptů -->
+    <ListView
+        android:id="@+id/recipe_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:hint="Obec"
-        android:inputType="text"
-        android:minHeight="48dp" />
+        android:layout_weight="1"/>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <EditText
-            android:id="@+id/age"
-            android:layout_width="0dp"
-            android:layout_height="51dp"
-            android:layout_weight="0.3"
-            android:autofillHints=""
-            android:ems="10"
-            android:hint="Věk"
-            android:inputType="number" />
-
-        <Button
-            android:id="@+id/send"
-            android:layout_width="00dp"
-            android:layout_height="match_parent"
-            android:layout_weight="0.3"
-            android:backgroundTint="#E228EF"
-            android:padding="2dp"
-            android:text="Odeslat"
-            android:textColor="#000000" />
-
-        <Button
-            android:id="@+id/Delete"
-            android:layout_width="00dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="0.3"
-            android:backgroundTint="#FD3929"
-            android:text="Smazat"
-            android:textColor="#000000" />
-
-
-    </LinearLayout>
-
+    <!-- TextView pro zobrazení ingrediencí po kliknutí na recept -->
     <TextView
         android:id="@+id/output"
         android:layout_width="match_parent"
-        android:layout_height="212dp"
-        android:layout_marginTop="190dp"
-        android:clickable="false"
-        android:textSize="30dp" />
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:padding="16dp"
+        android:text="Vyberte recept pro zobrazení ingrediencí" />
 
 </LinearLayout>
