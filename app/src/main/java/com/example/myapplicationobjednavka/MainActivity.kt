@@ -1,20 +1,56 @@
 package com.example.myapplicationobjednavka
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.example.myapplicationobjednavka.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+
+    private lateinit var binding: ActivityMainBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
-        setContentView(R.layout.activity_main)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        setContentView(binding.root)
+
+        // Nastavení obrázku podle výběru druhu steaku
+        binding.radioGroupSteak.setOnCheckedChangeListener { _, checkedId ->
+            when (checkedId) {
+                binding.radioButtonRibeye.id -> {
+                    binding.imageViewSteak.setImageResource(R.drawable.ribeye)
+                }
+                binding.radioButtonTbone.id -> {
+                    binding.imageViewSteak.setImageResource(R.drawable.tbone)
+                }
+                binding.radioButtonSirloin.id -> {
+                    binding.imageViewSteak.setImageResource(R.drawable.sirloin)
+                }
+            }
+        }
+
+        // Nastavení souhrnu objednávky při kliknutí na tlačítko "odeslat"
+        binding.odeslat.setOnClickListener {
+            val steakType = when (binding.radioGroupSteak.checkedRadioButtonId) {
+                binding.radioButtonRibeye.id -> "Ribeye"
+                binding.radioButtonTbone.id -> "T-Bone"
+                binding.radioButtonSirloin.id -> "Sirloin"
+                else -> ""
+            }
+
+            val doneness = when (binding.radioGroupDoneness.checkedRadioButtonId) {
+                binding.radioButtonRare.id -> "Rare"
+                binding.radioButtonMedium.id -> "Medium"
+                binding.radioButtonWellDone.id -> "Well Done"
+                else -> ""
+            }
+
+            val spices = mutableListOf<String>()
+            if (binding.checkBoxPepper.isChecked) spices.add("Pepř")
+            if (binding.checkBoxGarlic.isChecked) spices.add("Česnek")
+            if (binding.checkBoxPaprika.isChecked) spices.add("Paprika")
+
+            val summary = "Steak: $steakType\nPropečení: $doneness\nKoření: ${spices.joinToString(", ")}"
+            binding.summaryTextView.text = "Souhrn objednávky:\n$summary"
         }
     }
 }

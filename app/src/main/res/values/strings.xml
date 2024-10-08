@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">MyApplicationObjednavka</string>
+    <string name="Odeslat">Button</string>
+    <string name="steak">TextView</string>
 </resources>
