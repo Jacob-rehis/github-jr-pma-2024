@@ -1,4 +1,4 @@
-package com.example.myapp002jetpackcompose
+package com.example.myapp4cv
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
