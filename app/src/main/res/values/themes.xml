@@ -8,4 +8,6 @@
     <style name="Theme.MyApplicationObjednavka" parent="Base.Theme.MyApplicationObjednavka" />
 
     <style name="Theme"></style>
+
+    <style name="Theme.MyApp4cv" parent="android:Theme.Material.Light.NoActionBar" />
 </resources>
