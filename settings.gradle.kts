@@ -21,4 +21,5 @@ dependencyResolutionManagement {
 
 rootProject.name = "MyApplicationObjednavka"
 include(":app")
+include(":app")
  
