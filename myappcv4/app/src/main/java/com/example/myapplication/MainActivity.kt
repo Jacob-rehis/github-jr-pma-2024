@@ -1,4 +1,4 @@
-package com.example.myapp002jetpackcompose
+package com.example.myapplication
 
 import android.os.Bundle
 import androidx.activity.ComponentActivity
@@ -58,6 +58,8 @@ fun ComposeExample() {
     var age by remember { mutableStateOf("") }
     var place by remember { mutableStateOf("") }
     var resultText by remember { mutableStateOf("") }
+    var hobby by remember { mutableStateOf("") }
+    var numberOfPets by remember { mutableStateOf("") }
 
     // Přidáme Scaffold, abychom mohli přidat TopAppBar
     Scaffold(
@@ -65,8 +67,7 @@ fun ComposeExample() {
             TopAppBar(
                 title = { Text("Moje Aplikace", color = Color.White) }, // Nastaví barvu textu na bílou
                 colors = TopAppBarDefaults.centerAlignedTopAppBarColors(
-                    containerColor = Color.DarkGray,  // Nastaví pozadí na černé
-                    //titleContentColor = Color.White // Nastaví barvu textu na bílou
+                    containerColor = Color.DarkGray
                 )
             )
         }
@@ -94,7 +95,7 @@ fun ComposeExample() {
             )
             OutlinedTextField(
                 value = age,
-                onValueChange = {
+                onValueChange = { it ->
                     // Omezíme vstup na číslice a kontrolujeme, že číslo není větší než 150
                     if (it.all { char -> char.isDigit() } && it.toIntOrNull()?.let { it <= 150 } == true) {
                         age = it
@@ -109,6 +110,22 @@ fun ComposeExample() {
                 label = { Text("Bydliště") },
                 modifier = Modifier.fillMaxWidth()
             )
+            OutlinedTextField(
+                value = hobby,
+                onValueChange = { hobby = it },
+                label = { Text("Koníček") },
+                modifier = Modifier.fillMaxWidth()
+            )
+            OutlinedTextField(
+                value = numberOfPets,
+                onValueChange = { it ->
+                    if (it.all { char -> char.isDigit() } && it.toIntOrNull()?.let { it <= 20 } == true) {
+                        numberOfPets = it
+                    }
+                },
+                label = { Text("Počet mazlíčků (hodnota menší než 21)") },
+                modifier = Modifier.fillMaxWidth()
+            )
 
             // Tlačítka Odeslat a Vymazat
             Row(
@@ -117,7 +134,7 @@ fun ComposeExample() {
             ) {
                 Button(
                     onClick = {
-                        resultText = "Jmenuji se $name $surname. Je mi $age let a moje bydliště je $place."
+                        resultText = "Jmenuji se $name $surname. Je mi $age let a moje bydliště je $place. Můj koníček je $hobby a mám $numberOfPets mazlíčků."
                     },
                     modifier = Modifier.weight(1f)
                 ) {
