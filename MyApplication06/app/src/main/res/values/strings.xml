@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">MyApplication06</string>
+    <string name="enter_travel_info">Enter travel info</string>
+    <string name="next">Next</string>
+    <string name="travel_planner_main">Travel Planner - Main</string>
+</resources>
