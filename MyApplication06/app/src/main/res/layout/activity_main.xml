@@ -27,18 +27,20 @@
         android:id="@+id/editTextDestination"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter destination"
-        android:autofillHints="cíl cesty"
         android:layout_marginTop="16dp"
+        android:autofillHints="cíl cesty"
+        android:hint="Enter destination"
+        android:minHeight="48dp"
         android:padding="8dp" />
 
     <EditText
         android:id="@+id/editTextDate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter travel date"
-        android:autofillHints="datum cesty"
         android:layout_marginTop="16dp"
+        android:autofillHints="datum cesty"
+        android:hint="Enter travel date"
+        android:minHeight="48dp"
         android:padding="8dp" />
 
     <Button
