@@ -1,0 +1,32 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color white
+drawable dalleapp
+drawable ic_launcher_background
+drawable ic_launcher_foreground
+drawable toast_background
+id adcRadioButton
+id btnBackToMain
+id btnShowSnackbar
+id btnShowToast
+id jgRadioButton
+id midRadioButton
+id playerData
+id playerName
+id positionGroup
+id submitButton
+id suppRadioButton
+id toastIcon
+id toastText
+id topRadioButton
+layout activity_lol
+layout activity_main
+layout custom_toast
+mipmap ic_launcher
+mipmap ic_launcher_round
+string app_name
+style Base.Theme.MyApp07
+style Theme.MyApp07
+xml backup_rules
+xml data_extraction_rules
