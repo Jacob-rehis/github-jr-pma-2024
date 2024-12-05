@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-mergeDebugResources-34:\\layout\\custom_toast.xml",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\custom_toast.xml"
+    },
+    {
+        "merged": "com.example.myapp07.app-mergeDebugResources-34:/layout/activity_lol.xml",
+        "source": "com.example.myapp07.app-main-37:/layout/activity_lol.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-mergeDebugResources-34:\\layout\\activity_lol.xml",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\activity_lol.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-mergeDebugResources-34:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\activity_main.xml"
+    }
+]

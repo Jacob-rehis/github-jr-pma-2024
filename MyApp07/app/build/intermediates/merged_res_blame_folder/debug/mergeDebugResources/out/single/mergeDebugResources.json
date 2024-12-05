@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\drawable_toast_background.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\drawable\\toast_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\xml\\data_extraction_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-anydpi_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-anydpi\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-hdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\layout_activity_lol.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\activity_lol.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\drawable_dalleapp.jpg.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\drawable\\dalleapp.jpg"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\xml\\backup_rules.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xxhdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-mdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xxhdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "com.example.myapp07.app-debug-35:/layout_activity_lol.xml.flat",
+        "source": "com.example.myapp07.app-main-37:/layout/activity_lol.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-mdpi\\ic_launcher.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-anydpi_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-anydpi\\ic_launcher.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\drawable_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\drawable\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\layout_custom_toast.xml.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\layout\\custom_toast.xml"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-hdpi\\ic_launcher_round.webp"
+    },
+    {
+        "merged": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-debug-35:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Kuba\\.gradle\\daemon\\8.7\\com.example.myapp07.app-main-37:\\mipmap-xxxhdpi\\ic_launcher.webp"
+    }
+]
