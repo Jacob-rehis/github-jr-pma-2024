@@ -1,9 +1,10 @@
-package com.example.MyFinalWork
+package com.example.myapplication
 
+import Task
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.MyFinalWork.databinding.ItemTaskBinding
+import com.example.myapplication.databinding.ItemTaskBinding
 
 class TaskAdapter(
     private val tasks: List<Task>, // Seznam úkolů
