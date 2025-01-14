@@ -21,7 +21,10 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e5c206fc-35ba-4fe3-8e07-3124ae107c80" name="Changes" comment="done" />
+    <list default="true" id="e5c206fc-35ba-4fe3-8e07-3124ae107c80" name="Changes" comment="done">
+      <change afterPath="$PROJECT_DIR$/../MyCarSchool2/app/src/main/java/com/example/mycarschool2/HomeFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../MyCarSchool2/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -91,6 +94,7 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "cf.first.check.clang-format": "false",
     "cidr.known.project.marker": "true",
+    "git-widget-placeholder": "MyCarSchool",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "C:/Users/Kuba/Documents/GitHub/github-jr-pma-2024/MyApp07",
     "run.code.analysis.last.selected.profile": "pProject Default",
