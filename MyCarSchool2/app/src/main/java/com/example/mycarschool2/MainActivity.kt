@@ -10,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // Při spuštění aplikace zobrazíme HomeFragment
+        // Při spuštění aplikace zobrazíme HomeFragment (nebo jiný defaultní)
         if (savedInstanceState == null) {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, HomeFragment())
@@ -35,6 +35,14 @@ class MainActivity : AppCompatActivity() {
         findViewById<Button>(R.id.button_podat_prihlasku).setOnClickListener {
             supportFragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, PodatPrihlaskuFragment())
+                .commit()
+        }
+
+        // ------------- Nové tlačítko "Zobrazit uživatele" -------------
+        findViewById<Button>(R.id.button_zobrazit_uzivatele).setOnClickListener {
+            // Vytvoříme (nebo jen použijeme) fragment pro zobrazení uživatelů
+            supportFragmentManager.beginTransaction()
+                .replace(R.id.fragment_container, ZobrazitUzivateleFragment())
                 .commit()
         }
     }

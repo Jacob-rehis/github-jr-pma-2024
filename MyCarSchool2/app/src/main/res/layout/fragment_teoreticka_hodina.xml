@@ -1,8 +1,11 @@
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- 1) Nadpis: Datum teorie -->
     <TextView
         android:id="@+id/textView_select_theory_date"
         android:layout_width="wrap_content"
@@ -14,6 +17,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp" />
 
+    <!-- 2) Tlačítko na zobrazení date pickeru -->
     <Button
         android:id="@+id/btnDatePicker"
         android:layout_width="wrap_content"
@@ -24,6 +28,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
 
+    <!-- 3) Nadpis: Čas teorie -->
     <TextView
         android:id="@+id/textView_select_theory_time"
         android:layout_width="wrap_content"
@@ -35,6 +40,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp" />
 
+    <!-- 4) TimePicker -->
     <TimePicker
         android:id="@+id/timePicker_theory"
         android:layout_width="wrap_content"
@@ -45,13 +51,38 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="8dp" />
 
+    <!-- 5) Nadpis: Uživatel -->
+    <TextView
+        android:id="@+id/textViewSelectUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vyberte uživatele:"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/timePicker_theory"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <!-- 6) Spinner pro uživatele -->
+    <Spinner
+        android:id="@+id/spinnerUsers"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/textViewSelectUser"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <!-- 7) Tlačítko: Potvrdit -->
     <Button
         android:id="@+id/button_confirm_theory"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Přihlásit se"
-        app:layout_constraintTop_toBottomOf="@id/timePicker_theory"
+        app:layout_constraintTop_toBottomOf="@id/spinnerUsers"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="16dp" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

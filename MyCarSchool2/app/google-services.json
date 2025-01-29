@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "468351605207",
+    "project_id": "autoskola-d691d",
+    "storage_bucket": "autoskola-d691d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:468351605207:android:9a4cd677cd0dd96e261392",
+        "android_client_info": {
+          "package_name": "com.example.mycarschool2"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBgYW3CO38o6pjjSOvHB69tk2So5IdSns8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

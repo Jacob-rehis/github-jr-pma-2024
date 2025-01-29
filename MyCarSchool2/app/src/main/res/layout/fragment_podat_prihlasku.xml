@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <!-- Nadpis -->
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/textViewFormTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Podat přihlášku"
@@ -13,16 +15,87 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="32dp" />
+        android:layout_marginTop="32dp"
+        android:gravity="center" />
 
+    <!-- Popisek a EditText pro Jméno -->
+    <TextView
+        android:id="@+id/textViewNameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jméno"
+        app:layout_constraintTop_toBottomOf="@id/textViewFormTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Zadejte jméno"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textViewNameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Popisek a EditText pro Příjmení -->
+    <TextView
+        android:id="@+id/textViewSurnameLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Příjmení"
+        app:layout_constraintTop_toBottomOf="@id/editTextName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextSurname"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Zadejte příjmení"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/textViewSurnameLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Popisek a EditText pro Datum narození -->
+    <TextView
+        android:id="@+id/textViewDateOfBirthLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Datum narození"
+        app:layout_constraintTop_toBottomOf="@id/editTextSurname"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp" />
+
+    <EditText
+        android:id="@+id/editTextDateOfBirth"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="DD.MM.RRRR"
+        android:inputType="date"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateOfBirthLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="8dp" />
+
+    <!-- Tlačítko pro odeslání formuláře -->
     <Button
         android:id="@+id/button_submit_form"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Odeslat přihlášku"
-        app:layout_constraintTop_toBottomOf="@id/textView3"
+        app:layout_constraintTop_toBottomOf="@id/editTextDateOfBirth"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
