@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!-- 1) Popisek + Spinner pro výběr uživatele -->
+        <TextView
+            android:id="@+id/textView_selectUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vyberte uživatele:"
+            android:textSize="18sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <Spinner
+            android:id="@+id/spinnerSelectUser"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/textView_selectUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp" />
+
+        <!-- 2) Tlačítko "Načíst" -->
+        <Button
+            android:id="@+id/button_load_user"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Načíst údaje"
+            app:layout_constraintTop_toBottomOf="@id/spinnerSelectUser"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- 3) Informace o uživateli -->
+        <TextView
+            android:id="@+id/textView_userDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Informace o uživateli se zde zobrazí..."
+            app:layout_constraintTop_toBottomOf="@id/button_load_user"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- 4) Nadpis: Teoretické hodiny -->
+        <TextView
+            android:id="@+id/textView_theoryTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Teoretické hodiny:"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/textView_userDetails"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- 5) Seznam teoretických hodin -->
+        <TextView
+            android:id="@+id/textView_theoryLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="(Zatím žádné)"
+            app:layout_constraintTop_toBottomOf="@id/textView_theoryTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp" />
+
+        <!-- 6) Nadpis: Praktické hodiny -->
+        <TextView
+            android:id="@+id/textView_practicalTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Praktické hodiny:"
+            android:textSize="18sp"
+            app:layout_constraintTop_toBottomOf="@id/textView_theoryLessons"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp" />
+
+        <!-- 7) Seznam praktických hodin -->
+        <TextView
+            android:id="@+id/textView_practicalLessons"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="(Zatím žádné)"
+            app:layout_constraintTop_toBottomOf="@id/textView_practicalTitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="8dp"
+            android:layout_marginHorizontal="16dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
