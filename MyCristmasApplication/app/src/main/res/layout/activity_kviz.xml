@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Text otázky -->
+    <TextView
+        android:id="@+id/tvQuestion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Otázka se zobrazí zde"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textAlignment="center"/>
+
+    <!-- Odpověď A -->
+    <Button
+        android:id="@+id/btnOptionA"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Odpověď A"
+        app:layout_constraintTop_toBottomOf="@id/tvQuestion"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Odpověď B -->
+    <Button
+        android:id="@+id/btnOptionB"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Odpověď B"
+        app:layout_constraintTop_toBottomOf="@id/btnOptionA"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Odpověď C -->
+    <Button
+        android:id="@+id/btnOptionC"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Odpověď C"
+        app:layout_constraintTop_toBottomOf="@id/btnOptionB"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <!-- Tlačítko Zpět -->
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zpět"
+        android:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="16dp"
+        />
+
+    <!-- Tlačítko Další -->
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Další"
+        android:backgroundTint="#009688"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
