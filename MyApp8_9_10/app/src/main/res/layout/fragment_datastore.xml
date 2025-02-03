@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/ds_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="DataStore Fragment"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/ds_edit_text"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Zadejte jméno"
+        android:layout_marginTop="16dp"
+        android:layout_marginHorizontal="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ds_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/ds_save_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Uložit"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ds_edit_text"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp" />
+
+    <Button
+        android:id="@+id/ds_load_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Načíst"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ds_edit_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="24dp" />
+
+    <TextView
+        android:id="@+id/ds_result_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zde se zobrazí načtený text"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/ds_save_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
